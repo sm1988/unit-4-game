@@ -1,0 +1,39 @@
+#target {
+    width: 250px; 
+    height: 100px; 
+    border-radius: 5px; 
+    background-color: aquamarine; 
+    text-align: center; 
+    font-size: 50;
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+}
+.score {
+    width: 250px; 
+    height: 100px; 
+    border-radius: 5px; 
+    background-color: darkolivegreen; 
+    text-align: center; 
+    font-size: 50;
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+}
+.gemBox{
+    width: 600px; 
+    height: 150px; 
+}
+.gem {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 5px;
+    float: left;
+    overflow: auto;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.dark-mode {
+    background-color: black;
+}
