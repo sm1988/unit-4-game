@@ -12,21 +12,21 @@
 
 </head>
 
-<body class="container" style="max-width: 880px;" id="bg">
+<body class="container" style="max-width: 880px;" >
     <div class="jumbotron">
         <img src="assets/images/crystal-game.jpg" style="width: 780px; height: 250px;">
     </div>
     <button type="button" class="btn btn-primary" id="playGame">Play The Game!</button>
-    <button type="button" class="btn btn-success">Your Wins : $win!</button>
-    <button type="button" class="btn btn-danger">Your Losses: $loss!</button>
-    <button type="button" class="btn btn-info">Reset</button>
-    <button type="button" class="btn btn-success" id="darkMode">Dark Mode</button>
-    <button type="button" class="btn btn-danger">Light Mode</button>
+    <button type="button" class="btn btn-success" id="win">Your Wins :</button>
+    <button type="button" class="btn btn-danger" id="loss">Your Losses : </button>
+    <button type="button" class="btn btn-info" id="reset">Reset</button>
+    <button type="button" class="btn btn-dark" id="darkMode">Dark Mode</button>
+    <button type="button" class="btn btn-light" id="lightMode">Light Mode</button>
 
     <div id="target"></div>
     <div class="score"></div>
 
-    <div class="gemBox">
+    <div id="gemBox">
         <div class="gem" id="crystal1">
             <img src="assets/images/crystal1.png" style="width: 100px; height: 100px;">
         </div>

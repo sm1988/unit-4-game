@@ -20,7 +20,7 @@
     margin-left: 50px;
     float: left;
 }
-.gemBox{
+#gemBox{
     width: 600px; 
     height: 150px; 
 }
@@ -36,4 +36,8 @@
 
 .dark-mode {
     background-color: black;
+}
+
+.light-mode {
+    background-color: white;
 }
