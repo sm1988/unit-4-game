@@ -53,8 +53,8 @@ $(document).ready(function () {
     });
 
     var replay = function () {
-        target = 0;
-        score = 0;
+        $("#target").empty();
+        $(".score").empty();
     };
     
     var getNum = function () {
