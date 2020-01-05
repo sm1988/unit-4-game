@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Crystal Collector
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/javascript/game.js"></script>
+
+    </head>
+
+    <body class="container" style="max-width: 780px;">
+        <div class="jumbotron">
+            <img src="assets/images/crystal-game.jpg" style="width: 780px; height: 350px;">
+        </div>
+        <button type="button" class="btn btn-primary">Play The Game!</button>
+        <button type="button" class="btn btn-success">Your Wins : $win!</button>
+        <button type="button" class="btn btn-danger">Your Losses: $loss!</button>
+        <button type="button" class="btn btn-warning">You have $guess Left</button>
+        <button type="button" class="btn btn-info">Reset</button>
+        <br><br>
+        <div>
+                <form NAME="WordForm">
+                    <p>Make a Guess!   </p>
+                    <input TYPE=text NAME="WordBox" ><br><br>
+                    <input TYPE=button VALUE="Generate" onClick="PickRandomWord(document.WordForm);" id="button">
+                </form>
+        </div>
+    </body>
+</html>
