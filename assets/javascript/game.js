@@ -3,6 +3,7 @@ $(document).ready(function () {
     // Dark mode enable
     $("#darkMode").click(function () {
         $('body').removeClass('light-mode');
+        $('.jumbotron').removeClass('light-mode');
         $('body').addClass('dark-mode');
         $('.jumbotron').addClass('dark-mode');
 
@@ -11,6 +12,7 @@ $(document).ready(function () {
     // Light Mode enable
     $("#lightMode").click(function () {
         $('body').removeClass('dark-mode');
+        $('.jumbotron').removeClass('dark-mode');
         $('body').addClass('light-mode');
         $('.jumbotron').addClass('light-mode');
 
