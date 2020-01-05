@@ -35,6 +35,7 @@ $(document).ready(function () {
 
 
     $("#playGame").click(function () {
+        $("#target").empty();
         target = rNum(19, 120);
         $('#target').append(target);
     });
@@ -46,7 +47,9 @@ $(document).ready(function () {
         loss = 0;
         $("#target").empty();
         $(".score").empty();
-        alert ("Game Over!");
+        $("#win").text("Won : 0");
+        $("#win").text("Lost : 0");
+        alert ("Game Over! Restart!");
     });
 
     var replay = function () {
@@ -57,18 +60,21 @@ $(document).ready(function () {
     var getNum = function () {
     };
     var success = function () {
-        if (target > score) {
+        if (target === 0) {
+            alert ("Press the Play Button");
+        }
+        else if (target > score) {
             $(".score").text(score);
         }
         else if (target === score) {
             $(".score").text(score);
             win++;
-            $("#win").text("Your Wins " + win);
+            $("#win").text(" Won : " + win);
             replay();
         }
         else {
             loss++;
-            $("#loss").text("Your Losses " + loss);
+            $("#loss").text(" Lost : " + loss);
             replay();
         }
     };
